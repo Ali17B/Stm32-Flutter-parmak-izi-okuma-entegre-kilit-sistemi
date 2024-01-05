@@ -52,14 +52,16 @@ class _KilitKontrolPageState extends State<KilitKontrolPage> {
   }
 
   void kilidiAc() {
-    bluetoothManager.sendData("KilidiAc");
+    print("Kilidi aç fonksiyonu çağrıldı");
+    bluetoothManager.sendData("2");
     setState(() {
       isLocked = false;
     });
   }
 
   void kilitle() {
-    bluetoothManager.sendData("Kilitle");
+    print("Kilitle fonksiyonu çağrıldı");
+    bluetoothManager.sendData("3");
     setState(() {
       isLocked = true;
     });
